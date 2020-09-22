@@ -79,3 +79,73 @@ const count = marks.length;
 const average = sum / count;
 
 console.log("Marks average:", average)
+
+console.log('-----------------')
+
+const num = [1, 2, 3, 4, 5]
+
+let numSum = 0;
+let index = 0;
+
+
+numSum = numSum + num[index++];
+console.log(numSum);
+
+numSum = numSum + num[index++];
+console.log(numSum);
+
+numSum = numSum + num[index++];
+console.log(numSum);
+
+numSum = numSum + num[index++];
+console.log(numSum);
+
+numSum = numSum + num[index++];
+console.log(numSum);
+
+//_++ funkscija, priekyje ++ jau priskaiciuoja viena, o ++ PIRMIAUSIA atspausdina orginalia 
+console.log('-----------------')
+
+let skaicius = 5;
+
+skaicius++;
+
+console.log('-----------------')
+
+let money = 0;
+// jeigu noriu taip nerasyti
+// money = money +7;
+// console.log(money, 'pegenu')
+
+// money = money +15;
+// console.log(money, 'pegenu')
+
+// money = money +31;
+// console.log(money, 'pegenu')
+// rasyti taip :
+
+money += 7;
+console.log(money, 'pegenu')
+
+money += 15;
+console.log(money, 'pegenu')
+
+money += 31;
+console.log(money, 'pegenu')
+
+
+//matematiniai operatoriai:
+//paprasti: +, -, *, /
+//increment: ++ (before, after)
+//decrement: -- (before, after)
+//update: +=, -=, *=, /=
+
+let minus = 7;
+
+minus *= 3;
+
+console.log(minus)
+
+
+
+
