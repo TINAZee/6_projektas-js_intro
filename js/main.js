@@ -74,7 +74,7 @@ console.log(fruits);
 //pazaidimas su pazymiais (vidurkio apskaiciavimas)
 console.log(marks);
 
-const sum = marks[0] + marks[1];
+let sum = marks[0] + marks[1];
 const count = marks.length;
 const average = sum / count;
 
@@ -145,6 +145,80 @@ let minus = 7;
 minus *= 3;
 
 console.log(minus)
+
+// Kintamųjų inicijavimas
+
+// Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis
+// Po kiekvieno jų inicijavimo, išvesti į console
+console.log(1234)
+console.log(9876)
+console.log(5678)
+
+// Sukurti 3 kintamuosius su teksto tipo reikšmėmis
+// Po kiekvieno jų inicijavimo, išvesti į console
+console.log('namas')
+console.log('namas')
+console.log('namas')
+// Sukurti 3 sąrašo tipo kintamuosius su penkiomis 
+//skaičių tipo reikšmėmis
+// Po kiekvieno jų inicijavimo, išvesti į console
+
+let firstlist = [1, 2, 3, 4, 5];
+let secondlist = [9, 8, 7, 6, 5];
+let thirdlist = [6, 5, 4, 3, 2]
+
+console.log(firstlist)
+console.log(secondlist)
+console.log(thirdlist)
+
+// Sukurti 3 sąrašo tipo kintamuosius su penkiomis 
+//teksto tipo reikšmėmis
+// Po kiekvieno jų inicijavimo, išvesti į console
+
+
+let txfirstlist = ['mau', 'au', 'giau', 'sau', 'rau'];
+let txsecondlist = ['gi', 'ki', 'si', 'mi', 'ni'];
+let txthirdlist = ['tri', 'pri', 'ki', 'tre', 'gru'];
+
+console.log(txfirstlist)
+console.log(txsecondlist)
+console.log(txthirdlist)
+
+// Veiksmai su kintamaisiais
+
+// Susumuoti visus skaičiaus tipo kintamuosius
+// Rezultatą išvesti į console
+
+let sumaa = 0;
+let mylist = -1;
+
+sumaa = sumaa + firstlist[++mylist];
+console.log(sumaa);
+sumaa = sumaa + firstlist[++mylist];
+console.log(sumaa);
+sumaa = sumaa + firstlist[++mylist];
+console.log(sumaa);
+sumaa = sumaa + firstlist[++mylist];
+console.log(sumaa);
+sumaa = sumaa + firstlist[++mylist];
+console.log(sumaa);
+
+let sumaaa = firstlist[0] + firstlist[1] + firstlist[2] + firstlist[3] + firstlist[4];
+console.log(sumaaa);
+
+// Sujungti visus teksto tipo kintamuosius taip, 
+//jog tarp jų būtų sudarytas tarpas
+// Rezultatą išvesti į console
+
+let tekstas = txfirstlist[0] + ' ' + txfirstlist[1] + ' ' + txfirstlist[2] + ' ' + txfirstlist[3] + ' ' + txfirstlist[4]
+
+console.log(tekstas);
+
+// Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai,
+// pagal pateiktą logiką
+// 1-2+3-4+5
+// Rezultatą išvesti į console
+// Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 
 
 
