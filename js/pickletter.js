@@ -22,24 +22,29 @@
 // gražina rezultatą
 
 
-function isrinktiRaides(tekstas,number) {
+function isrinktiRaides(tekstas,kelintas) {
 
-   let perdarytaszodis= ''; 
+   if (typeof tekstas !== "string") {
+      return 'Pirmasis kintamasis yra netinkamo tipo.';
+  }
+   if (tekstas === undefined || tekstas.length === 0 || tekstas.length >= 100) {
+    return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio.';
+   }
+   if (typeof kelintas !== "number") {
+      return 'Antrasis kintamasis yra netinkamo tipo.';
+  }
+  if (kelintas <= 0) {
+     return 'Antrasis kintamasis turi būti didesnis už nulį.'
+  }
+  if (tekstas.length <= kelintas) {
+     return 'Antrasis kintamasis turi būti ne didesnis už pateikto teksto ilgį.'
+  }
 
-   for (let i = 1; i <= tekstas.length-1; i=i+number) {
+  let perdarytaszodis= ''; 
+
+   for (let i = kelintas-1; i <= tekstas.length-1; i=i+kelintas) {
       perdarytaszodis += tekstas[i];
    }
-   // if (typeof tekstas !== 'tekstas') {
-   //    return 'Pirmasis kintamasis yra netinkamo tipo';
-   // }
-   // if (tekstas === undefined || tekstas.length === 100) {
-   //  return 'Pirmojo kintamojo reikšmė yra netinkamo dydžio.';
-   // }
-   // if (tekstas < number) {
-   //    return 'Antrasis kintamasis yra netinkamo tipo';
-   // }
-
-
    return perdarytaszodis
 }
 
@@ -57,10 +62,10 @@ console.log( isrinktiRaides( 1561, 2 ), '->','Pirmasis kintamasis yra netinkamo 
 
 
 // let tekstas1 = 'abcdefg';
-// let kelintas1 = 2;
+// let kelintas1 = 3;
 // let perdarytaszodis1= '';
 
-// for (let i = 1; i <= tekstas1.length-1; i=i+kelintas1) {
+// for (let i = kelintas1-1; i <= tekstas1.length-1; i = i+kelintas1) {
 //    perdarytaszodis1 += tekstas1[i];
 // }
 
