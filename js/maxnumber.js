@@ -27,7 +27,7 @@ function didziausiasSkaiciusSarase(Array) {
         return 'Pateiktas sąrašas negali būti tuščias.';
     }
 
-    if (Array.includes('')) {
+    if (typeof Array !== 'object') {
        
         return 'Pateikta netinkamo tipo reikšmė';
     } 

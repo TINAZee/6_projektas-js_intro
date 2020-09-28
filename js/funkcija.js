@@ -33,5 +33,34 @@ function daugyba(skaicius1, skaicius2) {
 
 console.log(daugyba(2,3));
 
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 
+    if((distanceToPump || mpg || fuelLeft) <= 0){
+    return false
+    }
+    if(distanceToPump > mpg**fuelLeft){
+    return false
+    }
+    if (distanceToPump,mpg,fuelLeft.toString() === "NaN") {
+    return false
+    }
+    if (distanceToPump,mpg,fuelLeft.toString() === "Infinity") {
+    return false
+    }
+    if (distanceToPump,mpg,fuelLeft.toString() === "-Infinity") {
+    return false
+    }
+    if (typeof distanceToPump !== 'number'|| typeof mpg !== 'number' || typeof fuelLeft !== 'number' ) {
+    return false
+    }
+    if (distanceToPump === undefined || mpg === undefined || fuelLeft === undefined ) {
+    return false
+    }
+    if (distanceToPump.length === 0 || mpg.length === 0 || fuelLeft === 0) {
+    return false
+    }
+    if(distanceToPump <= mpg**fuelLeft){
+    return true
+    }
+  };
 

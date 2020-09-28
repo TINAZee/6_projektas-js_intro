@@ -50,3 +50,31 @@ switch (stotele) {
         console.log('Tokia stotele nerasta 🙁');
         break;
 }
+function getDrinkByProfession(drink){
+    
+    let drink = "Jabroni";
+switch (drink) {
+
+    case "Jabroni" :
+        drink = "Patron Tequila";
+        break;
+    case "School Counselor" :
+        drink = "Anything with Alcohol";
+        break;
+    case  "Programmer" :
+        drink = ("Hipster Craft Beer");
+        break;
+    case  "Bike Gang Member" :
+        drink = "Moonshine";
+        break;
+    case  "Politician" :
+        drink = "Your tax dollars";
+        break;
+    case "Rapper" :
+        drink = "Cristal";
+        break;
+
+    default:
+        drink = "Beer";
+        break;
+}};
