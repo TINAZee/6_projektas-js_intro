@@ -126,41 +126,13 @@ function tree(height){
 
 tree(8);
 
+//Bartender
+function summation(num) {
+  summa = 0;
+  for (let i = 0; i <= num; i++) {
+  summa += i
+  }
+  return summa
+}
 
-
-function getDrinkByProfession(drink){
-  const toTitleCase = (phrase) => {
-    return phrase
-      .toLowerCase()
-      .split(' ')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  };
- 
-switch (toTitleCase(drink)) {
-
-  case 'Jabroni' :
-      drink = "Patron Tequila"
-      //break;
-  case "School Counselor" :
-      drink = "Anything with Alcohol";
-      //break;
-  case  "Programmer" :
-      drink = ("Hipster Craft Beer");
-      //break;
-  case  "Bike Gang Member" :
-      drink = "Moonshine";
-      //break;
-  case  "Politician" :
-      drink = "Your tax dollars";
-      //break;
-  case "Rapper" :
-      drink = "Cristal";
-      //break;
-
-  default:
-      drink = "Beer";
-      //break;
-}};
-
-console.log(getDrinkByProfession("jabrOni"), "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
+console.log(summation(8)); 
